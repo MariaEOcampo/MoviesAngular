@@ -1,3 +1,27 @@
-<pre *ngIf="auth.user$ | async as user">
-    <code>{{user | json}} </code>
-</pre>
+<div class="container">
+  <pre *ngIf="auth.user$ | async as user">
+        <h1> Wellcome {{user.given_name}} </h1>
+        <h3>We have all this fantastic proposals to watch </h3>
+    </pre>
+  <div class="container">
+    <div class="form-group">
+      <label>Filter for release year, movie o serie </label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Eg. Better Call Saul"
+        name="filterMovie"
+        [(ngModel)]="filterMovie"
+      />
+    </div>
+    <div class="d-flex flex-wrap">
+      <div
+        *ngFor="let movie of movies | filter: filterMovie"
+        class="d-flex m-2"
+      >
+        {{ filterMovie }}
+        <app-movie-card [movies]="movie"> </app-movie-card>
+      </div>
+    </div>
+  </div>
+</div>
