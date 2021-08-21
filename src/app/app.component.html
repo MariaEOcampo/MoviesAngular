@@ -23,14 +23,14 @@
     *ngIf="!(auth.isAuthenticated$ | async)"
     (click)="loginWithRedirect()"
   >
-    Ingresar
+    Login
   </button>
   <button
     class="btn btn-danger"
     *ngIf="auth.isAuthenticated$ | async"
     (click)="logout()"
   >
-    Salir
+    Logout
   </button>
 </nav>
 
