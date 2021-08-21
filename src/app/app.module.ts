@@ -11,7 +11,6 @@ import { AuthModule } from '@auth0/auth0-angular';
 import { MovieListComponent } from './pages/movie-list/movie-list.component';
 import { MovieCardComponent } from './components/movie-card/movie-card.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { OrderPipe } from './pipes/order.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { OrderPipe } from './pipes/order.pipe';
     MovieListComponent,
     MovieCardComponent,
     FilterPipe,
-    OrderPipe,
   ],
   imports: [
     BrowserModule,
