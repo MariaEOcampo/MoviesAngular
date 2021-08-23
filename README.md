@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Backend
 
-Install JSON Server : npm install -g json-server
-Put the attached db.json file in a new folder
+Install JSON Server : npm install -g json-server.
+Put the attached db.json file in a new folder.
 Put the location of the db file in the console. 
 Then run Start JSON Server : json-server --watch db.json
 
