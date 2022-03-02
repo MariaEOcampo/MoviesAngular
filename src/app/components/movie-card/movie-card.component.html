@@ -1,0 +1,10 @@
+<div class="card col">
+  <div class="card-body">
+    <h5 class="card-title">{{ movies.title }}</h5>
+    <p class="card-text">{{ movies.programType | uppercase }}</p>
+    <p class="card-text">
+      <small class="text-muted">{{ movies.releaseYear }}</small>
+    </p>
+  </div>
+  <img [src]="movies.images['Poster Art'].url" class="card-img-top" alt="..." />
+</div>

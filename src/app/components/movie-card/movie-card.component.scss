@@ -1,0 +1,23 @@
+.card{
+    width: 20vw!important;
+    @media only screen and (max-width: 787px) {
+        width: 84vw!important;
+    }
+}
+.card-title {
+    color: rgb(230, 216, 22)!important;
+}
+
+.card-text{
+    color: #fff!important;
+}
+
+.text-muted{
+    font-size: 1rem!important;
+    font-weight: 600 !important;
+    color: #fff!important;
+}
+
+.card-body{
+    background-color: black!important;
+}
